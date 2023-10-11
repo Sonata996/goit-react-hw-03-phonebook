@@ -20,7 +20,7 @@ componentDidMount(){
   const savedLocalStorage = localStorage.getItem('list-contacts')
   if (savedLocalStorage !== null) {
     this.setState({
-      contacts:savedLocalStorage
+      contacts: JSON.parse(savedLocalStorage)
     })
     
   }
